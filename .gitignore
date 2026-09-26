@@ -8,3 +8,5 @@ __pycache__/
 htmlcov/
 .env
 .DS_Store
+practice_hours.db
+practice_hours_test.db

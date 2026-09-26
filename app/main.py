@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 
+from .interruption.routers import router as interruption_router
 from .routers import router
 
 app = FastAPI(
@@ -17,6 +18,7 @@ app = FastAPI(
 )
 
 app.include_router(router)
+app.include_router(interruption_router)
 
 
 @app.get("/health", tags=["meta"])
